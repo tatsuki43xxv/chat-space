@@ -39,7 +39,7 @@
       color: #FFFFFF;
       font-weight: bold;
       padding-top: 20px;
-      &__groups__messages{
+      &__messages{
         font-size: 11px;
         color: #FFFFFF;
         font-weight: bold;
@@ -57,13 +57,13 @@
     padding: 0 40px;
     border-bottom: medium solid #eeeeee;
     &__groups{
-      &__groups__group{
+      &__group{
         font-size: 20px;
         color: #333333;
         padding-top: 35px;
         padding-bottom: 15px;
       }
-      &__groups__name{
+      &__name{
         font-size: 12px;
         color: #999999;
       }
@@ -85,7 +85,7 @@
     background-color: #fafafa;
     &__messages{
       padding-bottom: 40px;
-      &__messages__name{
+      &__name{
         font-size: 16px;
         font-weight: bold;
         color: #434a54;
