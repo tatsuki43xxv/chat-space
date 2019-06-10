@@ -15,14 +15,14 @@
     height: 100px;
     background-color: #253141;
     padding: 0 20px;
-    .left-top__name{
+    &__name{
       font-size: 16px;
       font-weight: bold;
       color: #FFFFFF;
       padding: 38px 0;
       float: left;
     }
-    .left-top__menu{
+    &__menu{
       margin-left: 4.8px;
       padding: 38px 0;
       float: right;
@@ -41,12 +41,12 @@
   .left-bottom{
     background-color: #2f3e51;
     padding: 0 20px;
-    .left-bottom__groups{
+    &__groups{
       font-size: 15px;
       color: #FFFFFF;
       font-weight: bold;
       padding-top: 20px;
-      .left-bottom__groups__messages{
+      &__groups__messages{
         font-size: 11px;
         color: #FFFFFF;
         font-weight: bold;
@@ -68,14 +68,14 @@
     height: 100px;
     padding: 0 40px;
     border-bottom: medium solid #eeeeee;
-    .right-top__groups{
-      .right-top__groups__group{
+    &__groups{
+      &__groups__group{
         font-size: 20px;
         color: #333333;
         padding-top: 35px;
         padding-bottom: 15px;
       }
-      .right-top__groups__name{
+      &__groups__name{
         font-size: 12px;
         color: #999999;
       }
@@ -96,15 +96,15 @@
     padding: 46px 40px;
     height: calc( 100% - 190px );
     background-color: #fafafa;
-    .right-middle__messages{
+    &__messages{
       padding-bottom: 40px;
-      .right-middle__messages__name{
+      &__messages__name{
         font-size: 16px;
         font-weight: bold;
         color: #434a54;
         margin-bottom: 10px;
       }
-      .right-middle__messages__message{
+      &__messages__message{
         font-size: 14px;
         color: #434a54;
         margin-bottom: 10px;
