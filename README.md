@@ -15,13 +15,13 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|name|string|null: false, add_index|
-foreign_key: true|
+|name|string|null: false|
 
 
 ### Association
-- belongs_to :group
-- belongs_to :user
+- has_many :users, through: :members
+- has_many :members
+- has_many :messages
 
 ## userテーブル
 
