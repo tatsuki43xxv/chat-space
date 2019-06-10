@@ -15,33 +15,32 @@
 
 |Column|Type|Options|
 |------|----|-------|
-|group_name|string|null: false, add_index|
-|menbers_id|integer|null: false, foreign_key: true|
+|name|string|null: false, add_index|
+foreign_key: true|
 
 
 ### Association
--has_many :groups
--has_many :messages
+- belongs_to :group
+- belongs_to :user
 
 ## userテーブル
 
 |Column|Type|Options|
 |------|----|-------|
-|user_name|string|null: false,add_index|
+|name|string|null: false,add_index|
 |email|string|null: false|
 |password|string|null: false|
-|menbers_id|integer|null: false, foreign_key: true|
-
 
 ### Association
--has_many :groups
--has_many :messages
+- has_many :groups, through: :members
+- has_many :members
+- has_many :messages
 
 ## messageテーブル
 
 |Column|Type|Options|
 |------|----|-------|
-|body|text|null: false,add_index|
+|body|text|
 |image|string||
 |group_id|integer|null: false, foreign_key: true|
 |user_id|integer|null: false, foreign_key: true|
