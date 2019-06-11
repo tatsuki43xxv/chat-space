@@ -1,9 +1,8 @@
-@import "font-awesome";
-@import "config/colors";
-@import "config/size";
-@import "_reset";
-@import "modules/flash";
-@import "modules/side_bar";
-@import "modules/user";
-@import "modules/group";
-@import "messages/messages.scss"
+@import "./reset";
+@import "./colors";
+@import "./index";
+@import "./flash";
+@import "./side_bar";
+@import "./font-awesome";
+@import "./user";
+@import "./group";
