@@ -15,6 +15,6 @@
       - current_user.groups.each do |group|
         = link_to groups_path(group) do
           .group-name
-            aaa
+            = group.name
           .latest-message
-            メッセージはまだありません。
+            = group.show_last_message
