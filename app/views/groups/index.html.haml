@@ -1,0 +1,30 @@
+.wrapper
+  = render 'groups/side'
+  .main
+    .main-header 
+      .current-group
+        %p.current-group__name test
+        %p.member-list Member : menber
+      .edit-header
+        = link_to edit_group_path(current_user) do
+          .edit-header__btn Edit
+    .messages 
+      .message
+        .info
+          %p.info__user-name  test
+          %p.info__date 2019/6/7(Wed) 00:00:00
+        %p.message-text hello
+      .message
+        .info
+          %p.info__user-name  test
+          %p.info__date 2019/6/7(Wed) 00:01:00
+        %p.message-text aa
+
+    .form 
+      %form.new-message
+        .input-box
+          %input.form__text{placeholder: "type a message"}
+          %label.image-label
+            %i.fa.fa-image
+            %input.form__image{type: "file"}
+        %input.form__submit-btn{type: "submit", value: "Send"}
