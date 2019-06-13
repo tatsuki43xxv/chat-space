@@ -10,8 +10,8 @@ html, body {
     float:right;
     height: 100vh;
     width: calc(100vw - 300px);
-    box-sizing: border-box;
     .main-header {
+      box-sizing: border-box;
       height: 100px;
       border-bottom: 1px solid #eeeeee;
       .current-group {
@@ -22,24 +22,28 @@ html, body {
           color: #333333;
           padding-top: 35px;
         }
-        .member-list {
+        &__members {
           font-size: 12px;
           color: #999999;
           padding-top: 15px;
+          .member {
+            display: inline-block;
+          }
         }
       }
-      .edit-header__btn {
-        float: right;
-        color: $light_blue;
-        height: 40px;
-        line-height: 40px;
-        margin-top: 28px;
-        margin-right: 40px;
-        padding: 0px 20px;
-        border: 1px solid $light_blue;
+      .edit-header {
+        &__btn {
+          float: right;
+          color: $light_blue;
+          height: 40px;
+          line-height: 40px;
+          margin-top: 28px;
+          margin-right: 40px;
+          padding: 0px 20px;
+          border: 1px solid $light_blue;
+        }
       }
     }
-
 
     .messages {
       background-color: #fafafa;
@@ -64,7 +68,7 @@ html, body {
             color: #999999;
           }
         }
-        .message-text {
+        .body {
           font-size: 14px;
           color: #434A54;
           padding-bottom: 40px;
@@ -76,39 +80,40 @@ html, body {
       background-color: #ddd;
       height: 90px;
       box-sizing: border-box;
-      padding: 20px 40px ;
-      .new-message {
-        display: flex;
-        .input-box { 
+      padding: 20px 40px;
+      .inputbox {
+        width: calc(100% - 120px);
+        position: relative;
+        float: left;
+        &__text {
+          height: 50px;
           width: 100%;
-          position: relative;
-          .form__text {
-            height: 50px;
-            width: 100%;
-            padding-left: 10px;
-            font-size: 16px;
-            color: #434A54;
-            border-style: none;
-            box-sizing: border-box;
-          }
-          .image-label {
+          padding-left: 10px;
+          font-size: 16px;
+          color: #434A54;
+          border-style: none;
+          box-sizing: border-box;
+        }
+        &__image {
+          &__label {
             font-size: 1.3rem;
             position: absolute;
             top: 10px;
             right: 10px;
           }
-            .form__image{
-              display: none;
-            }
+          .hidden {
+            display: none;
+          }
         }
-        .form__submit-btn {
-          height: 50px;
-          width: 100px;
-          background-color: $light_blue;
-          color: $white;
-          margin-left: 15px;
-          padding: 0px 30px;
-        }
+      }
+      &__submit {
+        height: 50px;
+        width: 100px;
+        background-color: $light_blue;
+        color: $white;
+        margin-left: 15px;
+        padding: 0px 30px;
+        float: right;
       }
     }
   }
