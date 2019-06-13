@@ -1,9 +1,12 @@
 @import "./reset";
-@import "./colors";
+
+@import "./variable";
+
 @import "./flash";
+@import "./main";
 @import "./side";
-@import "./index";
+
+@import "./font-awesome";
+
 @import "./user";
 @import "./group";
-@import "font-awesome-sprockets";
-@import "font-awesome"; 
