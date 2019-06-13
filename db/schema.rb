@@ -25,11 +25,10 @@ ActiveRecord::Schema.define(version: 20190612092653) do
     t.string   "name",       null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["name"], name: "index_groups_on_name", unique: true, using: :btree
   end
 
   create_table "messages", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.string   "content"
+    t.string   "body"
     t.string   "image"
     t.integer  "group_id"
     t.integer  "user_id"
