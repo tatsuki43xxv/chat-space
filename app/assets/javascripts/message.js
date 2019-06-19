@@ -1,4 +1,4 @@
-$(document).on('turbolinks:load', function(){
+$(function() {
   function buildHTML(message){
     var body = message.body ? `${ message.body }` : "";
     var img = message.image ? `<img src= ${ message.image }>` : "";
@@ -8,7 +8,7 @@ $(document).on('turbolinks:load', function(){
                       ${message.user_name}
                     </p>
                     <p class="info__date">
-                      ${message.create_at}
+                      ${message.created_at}
                     </p>
                   </div>
                   <div class="body">
@@ -50,6 +50,7 @@ $(document).on('turbolinks:load', function(){
       $('.form__submit').prop('disabled', false);
     })
   })
+
   var reloadMessages = function() {
     var last_message_id = $('.messages').children().last().data('id');
     var reload_url = window.location.href
