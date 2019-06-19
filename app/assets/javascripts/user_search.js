@@ -34,11 +34,11 @@ $(function() {
     })
     
     .done(function(user_names) {
+      console.log(user_names);
       $("#user-search-result").empty();
-      if (user_names.length !== 0) {
+      if (user_names.length != 0) {
         user_names.forEach(function(user_name){
           appendUserSearchHTML(user_name);
-          
         });
       }
       else {
