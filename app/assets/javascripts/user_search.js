@@ -50,7 +50,7 @@ $(document).on('turbolinks:load', function() {
       })
     });
 
-    $(document).on('click', ".user-search-add", function(){
+    $("#user-search-result").on('click', ".user-search-add", function(){
         var user_id = $(this).data('user-id');
         var user_name = $(this).data('user-name');
         var html = `<div class='chat-group-user clearfix js-chat-member' id='${user_id}'>
